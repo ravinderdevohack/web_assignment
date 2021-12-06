@@ -1,11 +1,11 @@
-/*@font-face {
+@font-face {
 	font-family: myFirstFont;
 	src: url("../fonts/FuzzyBubbles-Bold.ttf");
 }
 body {
 	background-color: rgba(00, 112, 112, .5);
 	font-family: myFirstFont;
-}*/
+}
 
 h1 {
 	text-align: center;
