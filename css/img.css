@@ -1,0 +1,22 @@
+@font-face {
+	font-family: myFirstFont;
+	src: url("../fonts/FuzzyBubbles-Bold.ttf");
+}
+body {
+	background-color: rgba(00, 112, 112, .5);
+	font-family: myFirstFont;
+}
+
+h1 {
+	text-align: center;
+}
+.center {
+	display: block;
+	width: 50%;
+	margin: 10% auto  0px;
+}
+
+figure {
+	text-align: center;
+	color: black;
+}
