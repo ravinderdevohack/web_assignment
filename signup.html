@@ -9,39 +9,43 @@
 </head>
 
 <body>
-    <div>
+    <div class="container">
         <form>
             <fieldset>
                 <legend>Sign up</legend>
-                <label for="fname">First Name</label>
-                <input type="text" name="fname" id="fname" placeholder="first name">
-                <label for="lname">Last Name</label>
-                <input type="text" name="lname" id="lname" placeholder="last name"><br>
-                <label for="addline1">Address line 1</label>
-                <input type="text" name="addline1" id="addline1" placeholder="line 1"><br>
-                <label for="addline2">Address line 2</label>
-                <input type="text" name="addline2" id="addline2" placeholder="line 2"><br>
-                <label for="email">Email</label>
+                <div class="su_name">
+                    <label class="name" for="fname">First Name :</label>
+                    <input type="text" name="fname" id="fname" placeholder="first name"><br>
+                    <label class="name" for="lname">Last Name : </label>
+                    <input type="text" name="lname" id="lname" placeholder="last name"><br>
+                </div>
+
+                <label for="addline1">Address line 1 : </label>
+                <input type="text" name="addline1" id="addline1" placeholder="H NO./Flat NO."><br>
+                <label for="addline2">Address line 2 :</label>
+                <input type="text" name="addline2" id="addline2" placeholder="City/Village"><br>
+                <label for="email">Email :</label><br>
                 <input type="email" name="email" id="email" placeholder="xyz@gmail.com" accept=".com"><br>
-                <label for="phone">Number</label>
+                <label for="phone">Number :</label><br>
                 <input type="text" name="phone" id="phone" placeholder="91-9578214345" pattern="[0-9]{2}-[0-9]{10}" title="match the pattern" size="12"><br>
-                <label for="state">state</label>
+                <label for="state">state</label><br>
                 <select id="state" name="state">
                     <option value="punjab">Punjab</option>
                     <option value="delhi">Delhi</option>
                     <option value="gujrat">Gujrat</option>
-                    <option value="haryana">Haryana</option>
+                    <option value="haryana" selected>Haryana</option>
                     <option value="bihar">Bihar</option>
                     <option value="uttarpradesh">Uttar Pradesh</option>
                     <option value="westbangal">West Bangal</option>
                     <option value="assam">Assam</option>
                 </select><br>
-                <label for="birth">D.O.B</label>
+                <label for="birth">D.O.B</label><br>
                 <input type="date" name="birth" id="birth"><br>
                 <label for="img">Select image</label>
                 <input type="file" id="img" name="img" accept=".png"><br>
-                <input type="submit" name="Submit">
-                <input type="reset"><br>
+                <div class="su_submit">
+                    <input type="submit" name="Submit">
+                    <input type="reset"><br></div>
             </fieldset>
         </form>
     </div>
