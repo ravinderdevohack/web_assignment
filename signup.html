@@ -6,18 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Sign up</title>
     <link rel="stylesheet" type="text/css" href="css/signup.css">
+    <script src="https://kit.fontawesome.com/5c272fcfff.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <div class="container">
         <form>
-            <fieldset>
+            <fieldset class="fieldset">
                 <legend>Sign up</legend>
                 <div class="su_name">
                     <label class="name" for="fname">First Name :</label>
-                    <input type="text" name="fname" id="fname" placeholder="first name"><br>
+                    <input type="text" name="fname" id="fname" placeholder="first name">
+                    <span><i id="fname-icon" class="fas fn-hide fa-exclamation-circle"></i></span><br>
                     <label class="name" for="lname">Last Name : </label>
-                    <input type="text" name="lname" id="lname" placeholder="last name"><br>
+                    <input type="text" name="lname" id="lname" placeholder="last name">
+                    <span><i id="lname-icon" class="fas ln-hide fa-exclamation-circle"></i></span><br>
                 </div>
 
                 <label for="addline1">Address line 1 : </label>
@@ -25,9 +28,11 @@
                 <label for="addline2">Address line 2 :</label>
                 <input type="text" name="addline2" id="addline2" placeholder="City/Village"><br>
                 <label for="email">Email :</label><br>
-                <input type="email" name="email" id="email" placeholder="xyz@gmail.com" accept=".com"><br>
+                <input type="email" name="email" id="email" placeholder="xyz@gmail.com">
+                <span><i id="email-icon" class="fas email-hide fa-exclamation-circle"></i></span><br>
                 <label for="phone">Number :</label><br>
-                <input type="text" name="phone" id="phone" placeholder="91-9578214345" pattern="[0-9]{2}-[0-9]{10}" title="match the pattern" size="12"><br>
+                <input type="text" name="phone" id="phone" placeholder="9578214345" >
+                <span><i id="phone-icon"class="fas phone-hide fa-exclamation-circle"></i></span><br>
                 <label for="state">state</label><br>
                 <select id="state" name="state">
                     <option value="punjab">Punjab</option>
@@ -40,15 +45,25 @@
                     <option value="assam">Assam</option>
                 </select><br>
                 <label for="birth">D.O.B</label><br>
-                <input type="date" name="birth" id="birth"><br>
+                <input type="date" name="birth" id="birth">
+                <span><i id="birth-icon" class="fas birth-hide fa-exclamation-circle"></i></span><br>
                 <label for="img">Select image</label>
                 <input type="file" id="img" name="img" accept=".png"><br>
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Avenger7@">
+                <span><i id="password-icon" class="fas password-hide fa-exclamation-circle"></i></span><br>
+                <label for="password">Confirm Password</label>
+                <input type="password" id="cpassword" placeholder="Avenger7@">
+                <span><i id="confirm-password-icon" class="fas cpassword-hide fa-exclamation-circle"></i></span><br>
+
                 <div class="su_submit">
-                    <input type="submit" name="Submit">
-                    <input type="reset"><br></div>
+                    <input id="submit-btn"
+                    type="button" value="Submit">
+                    <input id="reset-btn"type="reset"><br></div>
             </fieldset>
         </form>
     </div>
+    <script src="js/signup.js"></script>
 </body>
 
 </html>
