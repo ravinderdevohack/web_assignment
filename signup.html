@@ -11,15 +11,15 @@
 
 <body>
     <div class="container">
-        <form>
+        <form action="firefox.html" method="post">
             <fieldset class="fieldset">
                 <legend>Sign up</legend>
                 <div class="su_name">
                     <label class="name" for="fname">First Name :</label>
-                    <input type="text" name="fname" id="fname" placeholder="first name">
+                    <input type="text" name="fname" id="fname" class="input" placeholder="first name">
                     <span><i id="fname-icon" class="fas fn-hide fa-exclamation-circle"></i></span><br>
                     <label class="name" for="lname">Last Name : </label>
-                    <input type="text" name="lname" id="lname" placeholder="last name">
+                    <input type="text" name="lname" id="lname" class="input" placeholder="last name">
                     <span><i id="lname-icon" class="fas ln-hide fa-exclamation-circle"></i></span><br>
                 </div>
 
@@ -28,10 +28,10 @@
                 <label for="addline2">Address line 2 :</label>
                 <input type="text" name="addline2" id="addline2" placeholder="City/Village"><br>
                 <label for="email">Email :</label><br>
-                <input type="email" name="email" id="email" placeholder="xyz@gmail.com">
+                <input type="email" name="email" id="email" class="input" placeholder="xyz@gmail.com">
                 <span><i id="email-icon" class="fas email-hide fa-exclamation-circle"></i></span><br>
                 <label for="phone">Number :</label><br>
-                <input type="text" name="phone" id="phone" placeholder="9578214345" >
+                <input type="text" name="phone" id="phone" class="input" placeholder="9578214345" >
                 <span><i id="phone-icon"class="fas phone-hide fa-exclamation-circle"></i></span><br>
                 <label for="state">state</label><br>
                 <select id="state" name="state">
@@ -50,10 +50,10 @@
                 <label for="img">Select image</label>
                 <input type="file" id="img" name="img" accept=".png"><br>
                 <label for="password">Password</label>
-                <input type="password" id="password" placeholder="Avenger7@">
+                <input type="password" id="password" class="input" placeholder="Avenger7@">
                 <span><i id="password-icon" class="fas password-hide fa-exclamation-circle"></i></span><br>
                 <label for="password">Confirm Password</label>
-                <input type="password" id="cpassword" placeholder="Avenger7@">
+                <input type="password" id="cpassword" class="input" placeholder="Avenger7@">
                 <span><i id="confirm-password-icon" class="fas cpassword-hide fa-exclamation-circle"></i></span><br>
 
                 <div class="su_submit">
